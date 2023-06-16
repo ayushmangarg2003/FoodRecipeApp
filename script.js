@@ -9,6 +9,8 @@ recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe')
 })
 
+// https://www.themealdb.com/
+
 function getMealList(){
     let searchInputText = document.getElementById('search-input').value.trim() 
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputText}`)
